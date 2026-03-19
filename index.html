@@ -7,6 +7,7 @@
   <title>Mobile Dekho</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="font-[Poppins] text-slate-800">
@@ -24,245 +25,247 @@
   </header>
   <main>
     <section class="max-w-7xl mx-auto mt-6 px-4">
-      <div class="relative rounded-3xl overflow-hidden shadow-lg">
-        <div id="slider" class="overflow-x-auto flex snap-x snap-mandatory no-scrollbar">
+      <div class="rounded-3xl overflow-hidden shadow-lg">
+
+        <!-- Slider -->
+        <div id="slider" class="flex overflow-x-auto snap-x snap-mandatory scroll-smooth">
+
           <!-- Slide 1 -->
           <div class="min-w-full snap-center flex flex-col lg:flex-row items-center justify-between px-20 py-12">
             <div class="space-y-6 text-center lg:text-left">
-              <h2 class="text-5xl font-bold">iPhone 15 Pro Max <br><span class="text-blue-600">Ultimate Titanium</span>
+              <h2 class="text-5xl font-bold">
+                iPhone 15 Pro Max <br>
+                <span class="text-blue-600">Ultimate Titanium</span>
               </h2>
               <p>A17 Pro chip with premium titanium design and powerful performance.</p>
             </div>
+
             <img src="images/iphn.webp" class="max-h-[400px] object-contain mt-6 lg:mt-0">
           </div>
+
           <!-- Slide 2 -->
           <div class="min-w-full snap-center flex flex-col lg:flex-row items-center justify-between px-20 py-12">
             <div class="space-y-6 text-center lg:text-left">
               <h2 class="text-5xl font-bold">Samsung S25 Ultra</h2>
               <p>AI-powered performance with Snapdragon 8 Elite and S Pen.</p>
             </div>
+
             <img src="images/samsung.webp" class="max-h-[400px] object-contain mt-6 lg:mt-0">
           </div>
+
           <!-- Slide 3 -->
           <div class="min-w-full snap-center flex flex-col lg:flex-row items-center justify-between px-20 py-12">
             <div class="space-y-6 text-center lg:text-left">
               <h2 class="text-5xl font-bold">Motorola Edge 50 Ultra</h2>
               <p>165Hz display with ultra-fast charging and smooth performance.</p>
             </div>
+
             <img src="images/moto.avif" class="max-h-[400px] object-contain mt-6 lg:mt-0">
           </div>
+
           <!-- Slide 4 -->
           <div class="min-w-full snap-center flex flex-col lg:flex-row items-center justify-between px-20 py-12">
             <div class="space-y-6 text-center lg:text-left">
               <h2 class="text-5xl font-bold">OnePlus 13</h2>
               <p>Fast performance with clean OxygenOS and 100W charging.</p>
             </div>
+
             <img src="images/op.webp" class="max-h-[400px] object-contain mt-6 lg:mt-0">
           </div>
+
         </div>
-        <!-- Arrows -->
-        <button onclick="slideBy(-1)"
-          class="absolute left-3 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white shadow px-3 py-2 rounded-full text-xl transition z-10">❮</button>
-        <button onclick="slideBy(1)"
-          class="absolute right-3 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white shadow px-3 py-2 rounded-full text-xl transition z-10">❯</button>
       </div>
     </section>
     <section class="max-w-7xl mx-auto my-20 px-4 text-center">
       <h2 class="text-4xl font-bold mb-12">Featured Phones</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
-        <div class="flex items-center justify-center">
+
+        <div
+          class="flex items-center justify-center transition-all duration-300 hover:-translate-y-2 hover:drop-shadow-xl cursor-pointer">
           <img src="images/iphn.webp" class="max-h-48 object-contain">
         </div>
-        <div class="flex items-center justify-center">
+        <div
+          class="flex items-center justify-center transition-all duration-300 hover:-translate-y-2 hover:drop-shadow-xl cursor-pointer">
           <img src="images/samsung.webp" class="max-h-48 object-contain">
         </div>
-        <div class="flex items-center justify-center">
+        <div
+          class="flex items-center justify-center transition-all duration-300 hover:-translate-y-2 hover:drop-shadow-xl cursor-pointer">
           <img src="images/moto.avif" class="max-h-48 object-contain">
         </div>
-        <div class="flex items-center justify-center">
+        <div
+          class="flex items-center justify-center transition-all duration-300 hover:-translate-y-2 hover:drop-shadow-xl cursor-pointer">
           <img src="images/op.webp" class="max-h-48 object-contain">
         </div>
+
       </div>
     </section>
+
+    <!-- LATEST PHONES — same hover effect as testimonial cards -->
     <section class="max-w-7xl mx-auto my-20 px-4 text-center">
       <h2 class="text-4xl font-bold mb-12">Latest Phones</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        <div class="border p-4 rounded-lg shadow">
+
+        <div
+          class="border border-slate-200 p-4 rounded-2xl shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-blue-400 cursor-pointer">
           <img src="images/iphn.webp" class="w-full h-48 object-contain">
           <h3 class="font-bold mt-4">iPhone 15 Pro Max</h3>
-          <p class="text-sm">Top-tier camera and A17 Pro performance.</p>
+          <p class="text-sm text-slate-500">Top-tier camera and A17 Pro performance.</p>
         </div>
-        <div class="border p-4 rounded-lg shadow">
+
+        <div
+          class="border border-slate-200 p-4 rounded-2xl shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-blue-400 cursor-pointer">
           <img src="images/samsung.webp" class="w-full h-48 object-contain">
           <h3 class="font-bold mt-4">Samsung S25 Ultra</h3>
-          <p class="text-sm">AI-powered flagship experience.</p>
+          <p class="text-sm text-slate-500">AI-powered flagship experience.</p>
         </div>
-        <div class="border p-4 rounded-lg shadow">
+
+        <div
+          class="border border-slate-200 p-4 rounded-2xl shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-blue-400 cursor-pointer">
           <img src="images/moto.avif" class="w-full h-48 object-contain">
           <h3 class="font-bold mt-4">Motorola Edge 50 Ultra</h3>
-          <p class="text-sm">Ultra smooth display with fast charging.</p>
+          <p class="text-sm text-slate-500">Ultra smooth display with fast charging.</p>
         </div>
-        <div class="border p-4 rounded-lg shadow">
+
+        <div
+          class="border border-slate-200 p-4 rounded-2xl shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-blue-400 cursor-pointer">
           <img src="images/op.webp" class="w-full h-48 object-contain">
           <h3 class="font-bold mt-4">OnePlus 13</h3>
-          <p class="text-sm">Fast and clean OxygenOS experience.</p>
+          <p class="text-sm text-slate-500">Fast and clean OxygenOS experience.</p>
         </div>
+
       </div>
     </section>
-    <section class="px-6 font-sans">
-      <div class="max-w-7xl mx-auto">
-        <div class="text-center space-y-4 mb-16">
-          <h2 class="text-4xl md:text-5xl font-black text-slate-900 tracking-tight">
-            Happy Clients Says
-          </h2>
-          <p class="text-slate-500 text-lg max-w-2xl mx-auto">
-            We take pride in helping our clients reach their goals. Here is what some of them have to say about our
-            journey together.
-          </p>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div
-            class="bg-white p-10 rounded-2xl border border-slate-200 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-blue-400 group">
-            <div class="flex flex-col items-center text-center">
-              <img src="images/user-1.png" alt="Julian Jameson"
-                class="w-24 h-24 rounded-full object-cover mb-6 ring-4 ring-slate-50 group-hover:ring-blue-50 transition-all">
-              <p class="text-slate-600 leading-relaxed mb-8 italic">
-                "The workflow integration is seamless. It saved me hours of manual data entry every single week. A total
-                game changer for my design projects!"
-              </p>
-              <div class="space-y-2">
-                <div class="flex justify-center text-blue-500 text-xl mb-2">
-                  ★★★★★
-                </div>
-                <h4 class="text-xl font-bold text-slate-900">Julian Jameson</h4>
-                <p class="text-blue-600 font-bold text-xs uppercase tracking-widest">UI/UX Designer</p>
-              </div>
-            </div>
-          </div>
-          <div
-            class="bg-white p-10 rounded-2xl border border-slate-200 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-blue-500 group relative">
-            <span
-              class="absolute -top-3 left-1/2 -translate-x-1/2 bg-blue-600 text-white text-[10px] font-bold px-4 py-1 rounded-full uppercase">
-              Top Review
-            </span>
-            <div class="flex flex-col items-center text-center">
-              <img src="images/user-2.png" alt="Elena Rodriguez"
-                class="w-24 h-24 rounded-full object-cover mb-6 ring-4 ring-slate-50 group-hover:ring-blue-50 transition-all">
-              <p class="text-slate-800 font-medium leading-relaxed mb-8">
-                "Slate helps me see exactly how many more days I need to work to reach my financial goals. The clarity
-                it provides for my team is unmatched."
-              </p>
-              <div class="space-y-2">
-                <div class="flex justify-center text-blue-500 text-xl mb-2">
-                  ★★★★★
-                </div>
-                <h4 class="text-xl font-bold text-slate-900">Elena Rodriguez</h4>
-                <p class="text-blue-600 font-bold text-xs uppercase tracking-widest">Project Manager</p>
-              </div>
-            </div>
-          </div>
-          <div
-            class="bg-white p-10 rounded-2xl border border-slate-200 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-blue-400 group">
-            <div class="flex flex-col items-center text-center">
-              <img src="images/user-3.png" alt="Marcus Chen"
-                class="w-24 h-24 rounded-full object-cover mb-6 ring-4 ring-slate-50 group-hover:ring-blue-50 transition-all">
-              <p class="text-slate-600 leading-relaxed mb-8 italic">
-                "I was skeptical about the security at first, but the speed of the interface and the support team won me
-                over. Highly recommended."
-              </p>
-              <div class="space-y-2">
-                <div class="flex justify-center text-blue-500 text-xl mb-2">
-                  ★★★★<span class="text-slate-200">★</span>
-                </div>
-                <h4 class="text-xl font-bold text-slate-900">Marcus Chen</h4>
-                <p class="text-blue-600 font-bold text-xs uppercase tracking-widest">DevOps Engineer</p>
-              </div>
+
+    <!-- TESTIMONIALS -->
+    <section class="max-w-7xl mx-auto my-20 px-6 font-sans">
+      <div class="text-center space-y-4 mb-16">
+        <h2 class="text-4xl md:text-5xl font-black text-slate-900 tracking-tight">Happy Clients Says</h2>
+        <p class="text-slate-500 text-lg max-w-2xl mx-auto">
+          We take pride in helping our clients reach their goals. Here is what some of them have to say about our
+          journey together.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+        <div
+          class="bg-white p-10 rounded-2xl border border-slate-200 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-blue-400 group">
+          <div class="flex flex-col items-center text-center">
+            <img src="images/user-1.png" alt="Julian Jameson"
+              class="w-24 h-24 rounded-full object-cover mb-6 ring-4 ring-slate-50 group-hover:ring-blue-50 transition-all">
+            <p class="text-slate-600 leading-relaxed mb-8 italic">
+              "The workflow integration is seamless. It saved me hours of manual data entry every single week. A total
+              game changer for my design projects!"
+            </p>
+            <div class="space-y-2">
+              <div class="flex justify-center text-blue-500 text-xl mb-2">★★★★★</div>
+              <h4 class="text-xl font-bold text-slate-900">Julian Jameson</h4>
+              <p class="text-blue-600 font-bold text-xs uppercase tracking-widest">UI/UX Designer</p>
             </div>
           </div>
         </div>
+
+        <div
+          class="bg-white p-10 rounded-2xl border border-slate-200 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-blue-500 group relative">
+          <span
+            class="absolute -top-3 left-1/2 -translate-x-1/2 bg-blue-600 text-white text-[10px] font-bold px-4 py-1 rounded-full uppercase">Top
+            Review</span>
+          <div class="flex flex-col items-center text-center">
+            <img src="images/user-2.png" alt="Elena Rodriguez"
+              class="w-24 h-24 rounded-full object-cover mb-6 ring-4 ring-slate-50 group-hover:ring-blue-50 transition-all">
+            <p class="text-slate-800 font-medium leading-relaxed mb-8">
+              "Slate helps me see exactly how many more days I need to work to reach my financial goals. The clarity it
+              provides for my team is unmatched."
+            </p>
+            <div class="space-y-2">
+              <div class="flex justify-center text-blue-500 text-xl mb-2">★★★★★</div>
+              <h4 class="text-xl font-bold text-slate-900">Elena Rodriguez</h4>
+              <p class="text-blue-600 font-bold text-xs uppercase tracking-widest">Project Manager</p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-white p-10 rounded-2xl border border-slate-200 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-blue-400 group">
+          <div class="flex flex-col items-center text-center">
+            <img src="images/user-3.png" alt="Marcus Chen"
+              class="w-24 h-24 rounded-full object-cover mb-6 ring-4 ring-slate-50 group-hover:ring-blue-50 transition-all">
+            <p class="text-slate-600 leading-relaxed mb-8 italic">
+              "I was skeptical about the security at first, but the speed of the interface and the support team won me
+              over. Highly recommended."
+            </p>
+            <div class="space-y-2">
+              <div class="flex justify-center text-blue-500 text-xl mb-2">
+                ★★★★<span class="text-slate-200">★</span>
+              </div>
+              <h4 class="text-xl font-bold text-slate-900">Marcus Chen</h4>
+              <p class="text-blue-600 font-bold text-xs uppercase tracking-widest">DevOps Engineer</p>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
+
+    <!-- FAQ -->
     <section class="max-w-7xl mx-auto my-20 px-4">
       <h2 class="text-4xl font-bold text-center mb-12">
         Frequently Asked <span class="text-blue-500">Questions</span>
       </h2>
       <div class="grid md:grid-cols-2 gap-10 items-center">
+
         <div class="hidden md:flex justify-center">
-          <img src="images/faq.png" FAQ Image" class="w-80 h-auto object-contain" />
+          <!-- FIX: was <img src="images/faq.png" FAQ Image" — missing alt=" opening quote, broken HTML -->
+          <img src="images/faq.png" alt="FAQ Image" class="w-80 h-auto object-contain" />
         </div>
+
         <div class="space-y-4">
           <details class="border border-gray-200 p-4 rounded-lg">
-            <summary class="font-semibold cursor-pointer">
-              Which phone is best?
-            </summary>
-            <p class="mt-2 text-gray-600">
-              iPhone 15 Pro Max and Samsung S25 Ultra are top choices.
-            </p>
+            <summary class="font-semibold cursor-pointer">Which phone is best?</summary>
+            <p class="mt-2 text-gray-600">iPhone 15 Pro Max and Samsung S25 Ultra are top choices.</p>
           </details>
           <details class="border border-gray-200 p-4 rounded-lg">
-            <summary class="font-semibold cursor-pointer">
-              Best gaming phone?
-            </summary>
-            <p class="mt-2 text-gray-600">
-              Snapdragon 8 Elite devices are best for gaming.
-            </p>
+            <summary class="font-semibold cursor-pointer">Best gaming phone?</summary>
+            <p class="mt-2 text-gray-600">Snapdragon 8 Elite devices are best for gaming.</p>
           </details>
           <details class="border border-gray-200 p-4 rounded-lg">
-            <summary class="font-semibold cursor-pointer">
-              Battery tips?
-            </summary>
-            <p class="mt-2 text-gray-600">
-              Keep between 20–80% for long battery life.
-            </p>
+            <summary class="font-semibold cursor-pointer">Battery tips?</summary>
+            <p class="mt-2 text-gray-600">Keep between 20–80% for long battery life.</p>
           </details>
           <details class="border border-gray-200 p-4 rounded-lg">
-            <summary class="font-semibold cursor-pointer">
-              Best camera phone?
-            </summary>
-            <p class="mt-2 text-gray-600">
-              iPhone 15 Pro Max is one of the best camera phones.
-            </p>
+            <summary class="font-semibold cursor-pointer">Best camera phone?</summary>
+            <p class="mt-2 text-gray-600">iPhone 15 Pro Max is one of the best camera phones.</p>
           </details>
           <details class="border border-gray-200 p-4 rounded-lg">
-            <summary class="font-semibold cursor-pointer">
-              Fast charging safe?
-            </summary>
-            <p class="mt-2 text-gray-600">
-              Yes, modern phones handle fast charging safely.
-            </p>
+            <summary class="font-semibold cursor-pointer">Fast charging safe?</summary>
+            <p class="mt-2 text-gray-600">Yes, modern phones handle fast charging safely.</p>
           </details>
           <details class="border border-gray-200 p-4 rounded-lg">
-            <summary class="font-semibold cursor-pointer">
-              How much RAM needed?
-            </summary>
-            <p class="mt-2 text-gray-600">
-              8GB is enough, 12GB+ for heavy usage.
-            </p>
+            <summary class="font-semibold cursor-pointer">How much RAM needed?</summary>
+            <p class="mt-2 text-gray-600">8GB is enough, 12GB+ for heavy usage.</p>
           </details>
         </div>
+
       </div>
     </section>
+
   </main>
+
+  <!-- FOOTER -->
   <footer class="bg-slate-900 text-gray-300 text-center py-8 px-4">
     <div class="max-w-md mx-auto">
       <h2 class="text-xl font-semibold text-white mb-2">Mobile <span class="text-blue-600">Dekho</span></h2>
-      <p class="text-sm mb-4">
-        Your trusted mobile shop for the latest smartphones and accessories.
-      </p>
+      <p class="text-sm mb-4">Your trusted mobile shop for the latest smartphones and accessories.</p>
       <div class="flex justify-center gap-4 text-sm mb-4">
         <a href="#" class="hover:text-white transition">Home</a>
         <a href="#" class="hover:text-white transition">Showroom</a>
         <a href="#" class="hover:text-white transition">Blog</a>
         <a href="#" class="hover:text-white transition">Contact</a>
       </div>
-      <p class="text-xs text-gray-500">
-        © 2026 Mobile Zone. All rights reserved.
-      </p>
-      <p class="text-xs text-gray-600 mt-2">
-        Built with HTML & Tailwind CSS by Jonaed
-      </p>
+      <p class="text-xs text-gray-500">© 2026 Mobile Zone. All rights reserved.</p>
+      <p class="text-xs text-gray-600 mt-2">Built with HTML & Tailwind CSS by Jonaed</p>
     </div>
   </footer>
+
 </body>
 
 </html>

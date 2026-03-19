@@ -1,0 +1,25 @@
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+#slider {
+  -webkit-overflow-scrolling: touch;
+}
+
+#slider::-webkit-scrollbar {
+  height: 3px;
+}
+
+#slider::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+#slider::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
