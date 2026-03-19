@@ -12,20 +12,62 @@
 <body class="font-[Poppins] text-slate-800">
   <header class="max-w-7xl mx-auto px-4">
     <nav class="flex justify-between items-center py-4">
-
       <h1 class="text-3xl font-bold">Mobile <span class="text-blue-600">Dekho</span></h1>
-
       <ul class="hidden lg:flex gap-8 font-medium">
         <li class="cursor-pointer hover:text-blue-600 transition-colors">Home</li>
         <li class="cursor-pointer hover:text-blue-600 transition-colors">Showroom</li>
         <li class="cursor-pointer hover:text-blue-600 transition-colors">Blog</li>
         <li class="cursor-pointer hover:text-blue-600 transition-colors">Contact</li>
       </ul>
-
       <button class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors">Login</button>
-
     </nav>
   </header>
+  <main>
+    <section class="max-w-7xl mx-auto mt-6 px-4">
+      <div class="relative rounded-3xl overflow-hidden shadow-lg">
+        <div id="slider" class="overflow-x-auto flex snap-x snap-mandatory no-scrollbar">
+          <!-- Slide 1 -->
+          <div class="min-w-full snap-center flex flex-col lg:flex-row items-center justify-between px-20 py-12">
+            <div class="space-y-6 text-center lg:text-left">
+              <h2 class="text-5xl font-bold">iPhone 15 Pro Max <br><span class="text-blue-600">Ultimate Titanium</span>
+              </h2>
+              <p>A17 Pro chip with premium titanium design and powerful performance.</p>
+            </div>
+            <img src="images/iphn.webp" class="max-h-[400px] object-contain mt-6 lg:mt-0">
+          </div>
+          <!-- Slide 2 -->
+          <div class="min-w-full snap-center flex flex-col lg:flex-row items-center justify-between px-20 py-12">
+            <div class="space-y-6 text-center lg:text-left">
+              <h2 class="text-5xl font-bold">Samsung S25 Ultra</h2>
+              <p>AI-powered performance with Snapdragon 8 Elite and S Pen.</p>
+            </div>
+            <img src="images/samsung.webp" class="max-h-[400px] object-contain mt-6 lg:mt-0">
+          </div>
+          <!-- Slide 3 -->
+          <div class="min-w-full snap-center flex flex-col lg:flex-row items-center justify-between px-20 py-12">
+            <div class="space-y-6 text-center lg:text-left">
+              <h2 class="text-5xl font-bold">Motorola Edge 50 Ultra</h2>
+              <p>165Hz display with ultra-fast charging and smooth performance.</p>
+            </div>
+            <img src="images/moto.avif" class="max-h-[400px] object-contain mt-6 lg:mt-0">
+          </div>
+          <!-- Slide 4 -->
+          <div class="min-w-full snap-center flex flex-col lg:flex-row items-center justify-between px-20 py-12">
+            <div class="space-y-6 text-center lg:text-left">
+              <h2 class="text-5xl font-bold">OnePlus 13</h2>
+              <p>Fast performance with clean OxygenOS and 100W charging.</p>
+            </div>
+            <img src="images/op.webp" class="max-h-[400px] object-contain mt-6 lg:mt-0">
+          </div>
+        </div>
+        <!-- Arrows -->
+        <button onclick="slideBy(-1)"
+          class="absolute left-3 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white shadow px-3 py-2 rounded-full text-xl transition z-10">❮</button>
+        <button onclick="slideBy(1)"
+          class="absolute right-3 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white shadow px-3 py-2 rounded-full text-xl transition z-10">❯</button>
+      </div>
+    </section>
+  </main>
 </body>
 
 </html>
